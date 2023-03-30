@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "RemoveYoutubeShorts",
+    "version": "0.1",
+  
+    "description": "Removes all shorts from YouTube subscription feed.",
+  
+    "icons": {
+      "48": "icons/remove_shorts_48.png",
+      "128": "icons/remove_shorts_128.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/feed/subscriptions*"],
+        "js": ["remove_shorts.js"]
+      }
+    ]
+  }
+  
